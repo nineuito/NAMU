@@ -1,40 +1,25 @@
-<!doctype html>
-<html
-  lang="en"
-  class="page"
-  id="home"
->
+<!DOCTYPE html>
+<html lang="en" class="page" id="home">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
       href="./images/logo-img/image.png"
       type="image/x-icon"
     />
     <title>NAMU</title>
-    <link
-      rel="stylesheet"
-      href="./styles/main.scss"
-    />
-    <script
-      src="./scripts/main.js"
-      defer
-    ></script>
+    <link rel="stylesheet" href="./styles/main.scss" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="./scripts/main.js" defer></script>
   </head>
   <body class="page__body">
     <header class="header">
-      <div class="header__background"></div>
+      <div class="header__background" data-aos="flip-left"></div>
       <div class="container">
         <div class="header__content">
           <div class="header__top">
-            <a
-              href="#menu"
-              class="header_burger-menu"
-            >
+            <a href="#menu" class="header_burger-menu">
               <svg
                 width="24"
                 height="24"
@@ -50,20 +35,13 @@
                 </g>
                 <defs>
                   <clippath id="clip0_12665_584">
-                    <rect
-                      width="24"
-                      height="24"
-                      fill="white"
-                    />
+                    <rect width="24" height="24" fill="white" />
                   </clippath>
                 </defs>
               </svg>
             </a>
 
-            <a
-              href="#"
-              class="header__logo"
-            >
+            <a href="#" class="header__logo">
               <svg
                 width="49"
                 height="52"
@@ -80,13 +58,10 @@
           </div>
 
           <div class="header__bottom">
-            <h1 class="header__title">ХУДОЖНІЙ МУЗЕЙ</h1>
+            <h1 class="header__title" data-aos="fade-right">ХУДОЖНІЙ МУЗЕЙ</h1>
 
-            <a
-              class="header__button"
-              href="#"
-            >
-              <span class="header__button-text">КВИТКИ</span>
+            <a class="header__button" href="#">
+              <span class="header__button-text" data-aos="fade-left">КВИТКИ</span>
               <span class="header__button-icon">
                 <svg
                   width="24"
@@ -103,11 +78,7 @@
                   </g>
                   <defs>
                     <clippath id="clip0_12594_30">
-                      <rect
-                        width="24"
-                        height="24"
-                        fill="white"
-                      />
+                      <rect width="24" height="24" fill="white" />
                     </clippath>
                   </defs>
                 </svg>
@@ -115,28 +86,19 @@
             </a>
           </div>
 
-          <a
-            href="#"
-            class="vertical__item"
-          >
+          <a href="#" class="vertical__item">
             <span class="vertical__item-text">ПОДІЇ</span>
           </a>
         </div>
       </div>
     </header>
 
-    <aside
-      class="menu page__menu"
-      id="menu"
-    >
+    <aside class="menu page__menu" id="menu">
       <div class="menu__background">
         <div class="container">
           <div class="menu__content">
             <div class="menu__top">
-              <a
-                href="#home"
-                class="menu__icon--close"
-              >
+              <a href="#home" class="menu__icon--close">
                 <svg
                   width="24"
                   height="24"
@@ -152,11 +114,7 @@
                   </g>
                   <defs>
                     <clippath id="clip0_24982_574">
-                      <rect
-                        width="24"
-                        height="24"
-                        fill="white"
-                      />
+                      <rect width="24" height="24" fill="white" />
                     </clippath>
                   </defs>
                 </svg>
@@ -166,10 +124,7 @@
                 <ul class="menu__nav-list">
                   <div class="menu__nav-item-column">
                     <li class="menu__nav-item">
-                      <a
-                        href="#gallery"
-                        class="nav__link menu__nav-link"
-                      >
+                      <a href="#gallery" class="nav__link menu__nav-link">
                         Галерея
                       </a>
                     </li>
@@ -192,10 +147,7 @@
                       </a>
                     </li>
                     <li class="menu__nav-item">
-                      <a
-                        href="#contacts"
-                        class="nav__link menu__nav-link"
-                      >
+                      <a href="#contacts" class="nav__link menu__nav-link">
                         Контакти
                       </a>
                     </li>
@@ -251,11 +203,8 @@
     <main class="main">
       <div class="container">
         <div class="main__content">
-          <section
-            class="current-events"
-            id="current-events"
-          >
-            <h2 class="current-events__title">Актуальні події</h2>
+          <section class="current-events" id="current-events">
+            <h2 class="current-events__title" data-aos="fade-down">Актуальні події</h2>
 
             <div class="current-events__cards">
               <div class="current-events__card">
@@ -332,11 +281,8 @@
             </div>
           </section>
 
-          <section
-            class="gallery"
-            id="gallery"
-          >
-            <h2 class="gallery__title">Галерея</h2>
+          <section class="gallery" id="gallery">
+            <h2 class="gallery__title" data-aos="fade-down">Галерея</h2>
 
             <div class="gallery__content">
               <div class="gallery__images">
@@ -363,7 +309,7 @@
             <div class="container">
               <div class="subscription__backgroud"></div>
               <div class="subscription__content">
-                <h2 class="subscription__title">Підписка</h2>
+                <h2 class="subscription__title" data-aos="fade-down">Підписка</h2>
                 <p class="subscription__description">
                   Бути в курсі всіх актуальних подій та останніх новин.
                 </p>
@@ -373,10 +319,7 @@
                     type="text"
                     placeholder="E-mail"
                   />
-                  <a
-                    href="#"
-                    class="subscription__email__button"
-                  >
+                  <a href="#" class="subscription__email__button">
                     <svg
                       width="8"
                       height="12"
@@ -402,10 +345,7 @@
       <div class="container">
         <div class="footer__content">
           <div class="footer__images">
-            <a
-              href="#"
-              class="footer__logo"
-            >
+            <a href="#" class="footer__logo">
               <svg
                 width="58"
                 height="63"
@@ -440,11 +380,7 @@
                   </g>
                   <defs>
                     <clippath id="clip0_320_220">
-                      <rect
-                        width="23.9626"
-                        height="24"
-                        fill="white"
-                      />
+                      <rect width="23.9626" height="24" fill="white" />
                     </clippath>
                   </defs>
                 </svg>
@@ -490,10 +426,7 @@
             </div>
           </div>
 
-          <div
-            class="footer__top"
-            id="contacts"
-          >
+          <div class="footer__top" id="contacts">
             <div
               class="footer__top-wrapper-column-first footer__top-wrapper-column footer__column"
             >
@@ -537,17 +470,11 @@
                   Київ, 01001
                   <br />
                 </a>
-                <a
-                  href="tel:+380442781357"
-                  class="footer__top-contacts-link"
-                >
+                <a href="tel:+380442781357" class="footer__top-contacts-link">
                   тел. +38 (044) 278-13-57
                 </a>
                 <br />
-                <a
-                  href="tel:+380442787454"
-                  class="footer__top-contacts-link"
-                >
+                <a href="tel:+380442787454" class="footer__top-contacts-link">
                   факс +38 (044) 278-74-54
                 </a>
                 <br />
@@ -558,10 +485,7 @@
                   e-mail: info@namu.kiev.ua
                 </a>
               </p>
-              <a
-                href="#"
-                class="footer__top-button-up"
-              >
+              <a href="#" class="footer__top-button-up">
                 <svg
                   width="16"
                   height="16"
@@ -585,10 +509,7 @@
                   class="footer__nav-item-column footer__nav-item-column-first"
                 >
                   <li class="footer__nav-item">
-                    <a
-                      href="#gallery"
-                      class="nav__link footer__nav-link"
-                    >
+                    <a href="#gallery" class="nav__link footer__nav-link">
                       Галерея
                     </a>
                   </li>
@@ -613,10 +534,7 @@
                     </a>
                   </li>
                   <li class="footer__nav-item">
-                    <a
-                      href="#contacts"
-                      class="nav__link footer__nav-link"
-                    >
+                    <a href="#contacts" class="nav__link footer__nav-link">
                       Контакти
                     </a>
                   </li>
@@ -634,5 +552,29 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: "aos-init", // class applied after initialization
+        animatedClassName: "aos-animate", // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: true, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
   </body>
 </html>
